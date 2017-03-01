@@ -1,0 +1,29 @@
+/*Navigation*/
+
+nav {
+	padding: 10px;
+}
+
+.navbar {
+	background-color: #C70039;
+}
+
+/*Footer*/
+#footer {
+	height: 100px;
+	background-color: #C70039;
+	text-align: center;
+}
+#top {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#top a:link, #top a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#top a:hover {
+	text-decoration: underline;
+}
