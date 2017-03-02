@@ -1,0 +1,15 @@
+/*Header One*/
+#background-one {
+    background-image: url(https://images.unsplash.com/photo-1460306855393-0410f61241c7);
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+    height: 800px;
+    clear: left;
+}
+
+#logo {
+    padding-left: 300px;
+    padding-top: 150px;
+    position: relative;
+}
