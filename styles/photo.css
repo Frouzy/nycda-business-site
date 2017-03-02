@@ -1,0 +1,104 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+}
+
+body{
+    background-color: #FDFFF7;
+    font-family: Arial, sans-serif;
+}
+
+/*---------------------------------------------*/
+         /*Navigation*/
+/*---------------------------------------------*/
+
+.navbar {
+    max-height: auto;
+    background-color: #C70039; 
+}
+
+/*---------------------------------------------*/
+         /*Header*/
+/*---------------------------------------------*/
+
+header {
+    width: 100%;
+}
+
+#text > h1{
+    font-family: serif;
+    font-size: 60px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    color: #E0232f;
+
+}
+
+#text >  h2{
+    font-family: serif;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #1A1A1A;
+
+}
+.photo1 > img {
+    width: 100%;
+}
+
+#text{
+    text-align: center;
+    font-size: 23px;
+}
+
+/*---------------------------------------------*/
+         /*main section*/
+/*---------------------------------------------*/
+
+.wrapper {
+    width: 80%;
+    margin:0 auto;
+}
+
+figure > img {
+    padding-right: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+figure > img:hover {
+    
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+}
+
+#clear {
+    clear: both;
+}
+
+/*---------------------------------------------*/
+         /*footer*/
+/*---------------------------------------------*/
+#footer {
+    width: 100%;
+    background-color: #C70039;
+    text-align: center;
+}
+#top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#top a:link, #top a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#top a:hover {
+    text-decoration: underline;
+}
+
+
+
+
