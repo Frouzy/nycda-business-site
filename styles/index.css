@@ -27,3 +27,14 @@
 
 
 }
+
+.text-container{
+    background-color: #AFC2A4;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+}
