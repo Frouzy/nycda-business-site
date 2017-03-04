@@ -1,79 +1,132 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-    <title></title>
+    <title>
+        Photo Gallery
+    </title>
     <!--jQuery and Bootstrap-->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/photo.js"></script>
+
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="styles/photo.css">
+    <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/">
 </head>
-<body>
-            <!-- Navigation -->
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header" id="top">
-            <a class="navbar-brand" href="index.html" id="top">LOGO HERE</a>
+<body>    
+    <header> <!-- Logo / Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand top" href="index.html">LOGO HERE</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="photo.html">Pictures</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>                 
+    </header>
+    <main> <!-- main content-->
+        <div class="slider" id="main-slider"><!-- outermost container element -->
+            <div class="slider-wrapper"><!-- innermost wrapper element -->
+                <img src="images/8.png"  alt="Burger 01"  class="slide" /><!-- slides -->
+                <img src="images/10.png" alt="Burger 02"  class="slide" />
+                <img src="images/11.png" alt="Burger 03"  class="slide" />
+                <img src="images/12.png" alt="Burger 04"  class="slide" />
+                <img src="images/13.png" alt="Burger 05"  class="slide" />
+                <img src="images/14.png" alt="Burger 06"  class="slide" />
+            </div>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Pictures</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div id="text">
+            <h1>Welcome to our favourite place</h1>
+            <h2>Our photo Gallery!</h2>
+        </div>
+        <div class="photos">
+            <div class="entry"> 
+                <figure><img src="images/8.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/10.png" width="750" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/11.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/12.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/13.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/14.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/8.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/10.png" width="750" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/11.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/12.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/13.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+            <div class="entry"> 
+                <figure><img src="images/14.png" width="350" alt="Burger 01"/>
+                    <figcaption> main photo</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <div id="clear"></div>
+    <div class="container-fluid" id="footer">  <!--Footer-->
+        <div class="top">
+            <a href="#">To Top</a>
+        </div>
+        <div id="links">
+            <a href="http://www.facebook.com" target="_blank">
+                <img src="images/icon_facebook.png" alt="image" width="40">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+                <img src="images/icon_twitter.png" alt="image" width="40">
+            </a>
+            <a href="http://www.instagram.com" target="_blank">
+                <img src="images/icon_instagram.png" alt="image" width="40">
+            </a>
+        </div>
     </div>
-</nav>
-                        <!--header -->
-<header>
-    <div class="photo1">
-        <img src="images/3.jpg" alt="Burger 01">
-    </div>
-    <div id="text">
-        <h1>Burgers Photo Gallery</h1>
-        <h2>Never lost a bite!</h2>
-    </div>     
-</header> 
-                       <!-- main section-->
-<div class="wrapper">
-    <main>
-        <figure>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-            <img src="images/2.jpg" width="350" alt="Burger 01"/>
-        </figure>
-   </main>
-</div>
-<div id="clear">
-                              <!--Footer-->
-
-<div class="container-fluid" id="footer">
-    <div id="top">
-        <a href="#">To Top</a>
-    </div>
-    <div id="links">
-        <a href="http:/www.facebook.com" target="_blank">
-            <img src="images/icon_facebook.png" alt="image" width="40">
-        </a>
-        <a href="http:/www.twitter.com" target="_blank">
-            <img src="images/icon_twitter.png" alt="image" width="40">
-        </a>
-        <a href="http:/www.instagram.com" target="_blank">
-            <img src="images/icon_instagram.png" alt="image" width="40">
-        </a>
-    </div>
-</div>
-</body>     
+</body> 
+</html> 
         
