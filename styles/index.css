@@ -1,6 +1,6 @@
 /*Header One*/
 #background-one {
-    background-image: url(https://images.unsplash.com/photo-1460306855393-0410f61241c7);
+    background-image: url(https://images.unsplash.com/photo-1421622548261-c45bfe178854);
     background-position: center bottom;
     background-size: cover;
     overflow: hidden;
@@ -10,8 +10,8 @@
 }
 
 #logo {
-    width: 50%;
-    margin: 150px auto;
+    width: 30%;
+    margin: 200px auto;
 }
 
 .text-container {
@@ -67,14 +67,14 @@ div.scroll {
 
 }
 
-#content-box-one{
-    /*background-color: red;*/
+#content-box-one {
+
 }
 
-#content-box-two{
-    /*background-color: blue;*/
+#content-box-two {
+
 }
 
-#content-box-three{
-    /*background-color: green;*/
+#content-box-three {
+
 }
