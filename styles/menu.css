@@ -1,0 +1,178 @@
+/*---------------------------------------------*/
+         /*body*/
+/*---------------------------------------------*/
+
+body{
+    width: 100%;
+    background-color: rgb(200,200,200);
+}
+
+
+/*---------------------------------------------*/
+         /*Header*/
+/*---------------------------------------------*/
+
+
+
+/*---------------------------------------------*/
+         /*main content*/
+/*---------------------------------------------*/
+
+
+.slider {
+    width: 60%;
+    margin: 2em auto;
+    
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    opacity: 0;
+    transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+    opacity: 1;
+}
+
+#text{
+    text-align: center;
+    font-size: 23px;
+}
+
+#text > h1{
+    text-align: center;
+    font-family: "Monotype Corsiva" serif;
+    font-size: 60px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: #C70039;
+}
+
+#text > h2{
+
+    font-family: serif;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    color: #131212;
+    z-index: 120;
+
+}
+
+.photos {
+    height: 700px;
+    margin: 0 auto 0 100px;
+}
+
+.entry {
+    width: 320px;
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 180px;
+    height: 198px;
+    z-index: 100;
+
+}
+
+.entry img {
+    width: 200px;
+}
+
+figure {
+    display:block;
+    max-width: 220px;
+    height: auto;
+    background-color: #e7e3d8;
+    padding: 9px;
+    margin: 0px;
+    text-align: left;
+}
+
+figure img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #d6d6d6; 
+}
+
+figcaption {
+    font-size: 20px;
+    margin-top: 10px;
+}
+figure:hover {
+    
+    transform: scale(1.3, 1.5);
+    opacity: 1;
+}
+
+#clear {
+    clear: both;
+}
+
+/*---------------------------------------------*/
+         /*footer*/
+/*---------------------------------------------*/
+
+
+
+
+/*---------------------------------------------*/
+         /*Screen Max-width*/
+/*---------------------------------------------*/
+
+
+@media screen and (max-width: 760px) {
+    .slide{
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .text h1{
+        width: 100%;
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+
+    .text h2{
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    .entry {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .entry figure{
+        width: 100%;
+        margin:0px;
+        background-color: inherit;
+    }
+
+    .entry img{
+        width: 300px;
+        height: auto;
+    }
+
+    figure:hover {
+    
+    transform: none;
+    }
+
+    .photos {
+    margin: 0 auto 0 auto;
+   }
+
+}
+    
+
