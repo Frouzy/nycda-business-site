@@ -3,137 +3,188 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <title>
-        Photo Gallery
-    </title>
+    <title>Photo Gallery</title>
+
     <!--jQuery and Bootstrap-->
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/photo.js"></script>
+    <script src="scripts/lightbox.min.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="styles/photo.css">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/">
+    <link rel="stylesheet" href="styles/lightbox.css">
 </head>
 <body>
-    <header> <!-- Logo / Navigation -->
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="http://www.burgerparlor.com/img/nav/nav-bp-logo.png" width="40" height="40" alt="Hamburgers">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="photo.html">Pictures</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
+<!-- Logo / Navigation -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="http://www.burgerparlor.com/img/nav/nav-bp-logo.png" width="40" height="40" alt="Hamburgers">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="photo.html">Pictures</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
             </div>
-        </nav>
-    </header>
-    <main> <!-- main content-->
-        <div class="slider" id="main-slider"><!-- outermost container element -->
-            <div class="slider-wrapper"><!-- innermost wrapper element -->
-                <img src="images/8.png"  alt="Burger 01"  class="slide" /><!-- slides -->
-                <img src="images/10.png" alt="Burger 02"  class="slide" />
-                <img src="images/11.png" alt="Burger 03"  class="slide" />
-                <img src="images/12.png" alt="Burger 04"  class="slide" />
-                <img src="images/13.png" alt="Burger 05"  class="slide" />
-                <img src="images/14.png" alt="Burger 06"  class="slide" />
+            </li>
+        </ul>
+    </div>
+</nav>
+<main> <!-- main content-->
+    <div class="cont">
+        <div class="page-head">
+            <h1>Welcome to our photo Gallery!</h1>
+            <p class="lead">A new place to enjoy a real hurger.</p>
+        </div>
+        <div class="gallery">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="images/33.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/33.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/34.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/34.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/35.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/35.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/32.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/32.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/33.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/33.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/34.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/34.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/35.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/35.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/36.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/36.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/37.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/37.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/38.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/38.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/40.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/40.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/41.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/41.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/40.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/40.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/30.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/30.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/35.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/35.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/30.jpg" data-title="x" data-lightbox="entrance of the restaurant">
+                        <img src="images/31.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/36.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/36.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/37.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/37.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/38.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/38.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/40.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/40.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/41.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/41.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/40.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/40.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/41.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/41.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/30.jpg" data-title="first photo" data-lightbox="entrance of the restaurant">
+                        <img src="images/30.jpg" width="210px" class="img-thumbnail"/>
+                    </a>
+                </div>
             </div>
         </div>
-        <div id="text">
-            <h1>Welcome to our favourite place</h1>
-            <h2>Our photo Gallery!</h2>
-        </div>
-        <div class="photos">
-            <div class="entry">
-                <figure><img src="images/8.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/10.png" width="750" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/11.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/12.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/13.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/14.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/8.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/10.png" width="750" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/11.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/12.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/13.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-            <div class="entry">
-                <figure><img src="images/14.png" width="350" alt="Burger 01"/>
-                    <figcaption> main photo</figcaption>
-                </figure>
-            </div>
-        </div>
-    </main>
-    <div id="clear"></div>
     <div class="container-fluid" id="footer">  <!--Footer-->
         <div class="top">
             <a href="#">To Top</a>
@@ -152,4 +203,9 @@
     </div>
 </body>
 </html> 
+        
+
+
+
+
         
