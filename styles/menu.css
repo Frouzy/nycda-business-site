@@ -53,27 +53,35 @@ a.navbar-brand {
 
 ---------------------------------------------*/
 
-
-#content {
-	min-height: 100%;
-	width: 960px;
-	margin: 0 auto;
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-h1 {
+.row {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.menu-background {
+	width: auto;
+	min-height: 100%;
 	margin-top: 40px;
-	margin-bottom: 40px;
-	font-size: 50px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-#menu-background {
-	min-height: 100%;
 	background-color: white;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	position: relative;
+	display: block;
+}
+
+h1.page-title {
+	overflow: hidden;
+	padding-top: 30px;
+	width: auto;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -81,17 +89,25 @@ h2 {
 	padding-left: 30px;
 	color: white;
 	font-weight: lighter;
+	text-transform: uppercase;
 }
 
 .column-left {
-	margin-top: 75px;
+	margin-top: 50px;
+	float: left;
+	width: 33%;
+	border-right: solid 2px black;
+}
+
+.column-middle {
+	margin-top: 50px;
 	float: left;
 	width: 33%;
 	border-right: solid 2px black;
 }
 
 .column-last {
-	margin-top: 75px;
+	margin-top: 50px;
 	float: left;
 	width: 33%;
 }
@@ -101,15 +117,14 @@ h2.title-block {
 	display: block;
 	background-color: black;
 	position: relative;
-	top: 40px;
+	top: 30px;
 	height: auto;
-	margin-bottom: 10px;
 }
 
 span.menu-item {
 	font-size: 24px;
 	margin-left: 30px;
-	font-weight:bold;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding-right: 10px;
 }
@@ -119,15 +134,39 @@ span.price {
 	font-size: 20px
 }
 
+span.side-item {
+	font-size: 18px;
+	margin-left: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-right: 10px;
+}
+
+span.side-price {
+	color: crimson;
+	font-size: 16px
+}
+
 p.food-menu {
 	margin-left: 30px;
 	margin-bottom: 20px;
 	margin-right: 10px;
 }
 
+a.rollover {
+	display: block;
+	height: auto;
+}
+
+a.rollover:hover {
+	background-color: lightgrey;
+	border-radius: 10px;
+}
+
 img.burger {
 	width: 350px;
 }
+
 /*---------------------------------------------
          
 	Media queries
@@ -135,11 +174,45 @@ img.burger {
 ---------------------------------------------*/
 
 
-@media screen and (max-width: 760px) {
-
+@media only screen and (max-width: 990px) {
 	
+	span.menu-item {
+		font-size: 16px;
+	}	
 	
+	span.price {
+		font-size: 16px;
+	}
+	
+	p.food-menu {
+		font-size: 14px;
+	}
+	
+	img.burger {
+		width: 40%;
+	}
 
+}
+
+
+@media only screen and (max-width: 760px) {
+	
+	.container {
+		min-width: 100%;
+	}
+	
+	.column-left, .column-middle, .column-last {
+		width: 50%;
+		padding-right: 10px;
+	}
+	
+	.column-middle {
+		border: 0px;
+	}
+	
+	.column-last {
+		border-right: solid 2px black;
+	}
 }
     
 
