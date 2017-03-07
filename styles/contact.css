@@ -3,6 +3,10 @@
     width: 100%;
 }
 
-form{
+form {
     padding-left: 10px;
+}
+
+button {
+    margin-bottom: 10px;
 }

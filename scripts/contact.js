@@ -5,12 +5,6 @@ $(document).ready(function () {
     $("#inputName").click(function () {
         this.value = "";
     });
-    $("#inputPeople").click(function () {
-        this.value = "";
-    })
-    $("#inputDate").click(function () {
-        this.value = "";
-    });
 
     $("#reservation").click(function () {
         var name = $("#inputName").val();
@@ -18,13 +12,13 @@ $(document).ready(function () {
         var date = $("#inputDate").val();
         if (name == "..." || name == "Name") {
             alert("Please fill in you name");
-        } else if (people == "" || people == "...") {
+        } else if (people == "") {
             alert("Please fill in the amount of people you want to make the reservation for");
-        } else if (date == "" || date == "...") {
-            alert("Please fill in ta date");
+        } else if (date == "") {
+            alert("Please fill in a date you would like to make a reservation for");
         }
         else {
-            alert("Thanks for you reservation " + name + " till " + date);
+            alert("Thanks for you reservation, " + name + ". We're looking forward to see you on " + date);
         }
     });
 
