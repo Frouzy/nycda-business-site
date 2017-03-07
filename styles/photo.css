@@ -2,9 +2,11 @@
          /*body*/
 /*---------------------------------------------*/
 
-body{
+body {
+  background-color: #100d0d;
+  color: #eee;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 
-    background-color: rgb(200,200,200);
 }
 
 
@@ -22,20 +24,17 @@ body{
          /*main content*/
 /*---------------------------------------------*/
 
-body {
-  background-color: #152836;
-  color: #eee;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 
-}
 
 .cont {
   text-align: center;
+
 }
 
 .page-head {
   padding: 40px 0;
   text-align: center;
+  margin-top: -100px;   
 }
 
 .page-head .lead {
@@ -47,18 +46,24 @@ body {
 
 }
 
-
 .page-head h1 {
-  font-size: 42px;
+  font-size: 52px;
   margin: 50px 0 20px;
-  color: #FFF;
+  color: #F4662F;
   position: relative;
   display: inline-block;
+}
+
+.cont{
+  margin-top: 100px;
+  line-height: 2.5; 
 }
 
 .row img{
   margin: 20px;
   padding: 5px;
+  border-radius: 50%;
+  border:10px solid #F4662F;
 }
 
 
@@ -92,3 +97,4 @@ body {
          /*Screen Max-width*/
 /*---------------------------------------------*/
 
+     
