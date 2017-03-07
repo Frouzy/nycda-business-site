@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HAMBURGERS</title>
+    <title>Contact</title>
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
@@ -105,19 +105,29 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        For reservations under fifteen persons call to<br><br>
-                        +31 20 XX XX XXX<br><br>
+                        For reservations under fifteen persons fill in the form below or call to:<br><br>
+                        +31 20 12 34 567<br><br>
                         Reservations for groups larger than fourteen persons, events or any other questions? Send us an
                         e-mail:<br><br>
-                        Booking@X.nl<br><br>
+                        giveme@burgers.nl<br><br>
                         Sunday – Thurstday 18:00 – 03:00<br>
                         (kitchen 18:00 – 02:00)<br>
                         Friday – Saturday 18:00 – 04:00<br>
                         (kitchen 18:00 – 03:00)<br>
                     </div>
+
+                    <form>
+                        Name:<br>
+                        <input type="text" name="name" id="inputName" onfocus="clearThis(this)">
+                        <br>
+                        How many people?<br>
+                        <input type="text" name="people" id="inputPeople">
+                    </form>
+
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary" id="reservation">Make Reservation</button>
                     </div>
                 </div>
             </div>
