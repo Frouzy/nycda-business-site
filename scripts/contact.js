@@ -5,22 +5,28 @@ $(document).ready(function () {
     $("#inputName").click(function () {
         this.value = "";
     });
-    $("#inputMail").click(function () {
+    $("#inputPeople").click(function () {
+        this.value = "";
+    })
+    $("#inputDate").click(function () {
         this.value = "";
     });
 
     $("#reservation").click(function () {
         var name = $("#inputName").val();
         var people = $("#inputPeople").val();
-        if (name == "" || name == "Name") {
+        var date = $("#inputDate").val();
+        if (name == "..." || name == "Name") {
             alert("Please fill in you name");
-        } else if (people == "" || people == "Amount of people") {
+        } else if (people == "" || people == "...") {
             alert("Please fill in the amount of people you want to make the reservation for");
-        } else {
-            alert("Thanks for you reservation, " + name);
+        } else if (date == "" || date == "...") {
+            alert("Please fill in ta date");
+        }
+        else {
+            alert("Thanks for you reservation " + name + " till " + date);
         }
     });
-
 
 });
 
