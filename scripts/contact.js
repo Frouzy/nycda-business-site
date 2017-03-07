@@ -1,11 +1,14 @@
 function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var amsterdam = {lat: 52.3702, lng: 4.8952};
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
-        center: uluru
+        zoom: 15,
+        center: amsterdam
     });
     var marker = new google.maps.Marker({
-        position: uluru,
+        position: amsterdam,
         map: map
     });
+
+    var trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
 }
