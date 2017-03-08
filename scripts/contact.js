@@ -114,7 +114,8 @@ function initMap() {
                 stylers: [{color: '#17263c'}]
             }
         ],
-        center: restaurantone,
+        // Center of map [Amsterdam Coordinates]
+        center: {lat: 52.3702, lng: 4.8952},
         //Gesture handling prevent unintended zoom on map with touch-sensitive devices.
         gestureHandling: 'cooperative'
 
