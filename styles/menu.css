@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: rgb(200,200,200);
+    background-color: #152836;
 	height: 100%;
 }
 
@@ -154,6 +154,8 @@ p.food-menu {
 }
 
 a.rollover {
+	margin-right: 10px;
+	margin-left: 10px;
 	display: block;
 	height: auto;
 }
@@ -216,3 +218,22 @@ img.burger {
 }
     
 
+@media only screen and (max-width: 480px) {
+	
+	.container {
+		min-width: 100%;
+	}
+	
+	.column-left, .column-middle, .column-last {
+		width: 100%;
+		padding-right: 10px;
+	}
+	
+	.column-middle {
+		border: 0px;
+	}
+	
+	.column-last {
+		border-right: solid 2px black;
+	}
+}
