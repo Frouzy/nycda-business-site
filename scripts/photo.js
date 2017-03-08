@@ -4,6 +4,6 @@ $(".navbar").slideDown(3000);
 $("img").hide();
 $("img").fadeIn(4000);
 $(".row").hide();
-$(".row").fadeIn(10000);
+$(".row").fadeIn(5000);
  });
 
