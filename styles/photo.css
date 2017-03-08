@@ -5,7 +5,8 @@
 body {
   background-color: #152836;
   color: #eee;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 10;
 
 }
 
@@ -25,19 +26,22 @@ body {
          /*main content*/
 /*---------------------------------------------*/
 
-
+h3{
+  font-size: 30px;
+  color: #F4662F;
+  margin-top: -20px;
+}
 
 .cont {
   text-align: center;
   margin-top: 100px;
-  line-height: 2.5;
-
+  z-index: 25;
 }
 
 .page-head {
   padding: 40px 0;
   text-align: center;
-  margin-top: -100px;   
+  margin-top: -100px; 
 }
 
 .page-head .lead {
@@ -57,8 +61,6 @@ body {
   display: inline-block;
 }
 
-
-
 .row img{
   margin: 20px;
   padding: 5px;
@@ -66,6 +68,17 @@ body {
   border:10px solid #F4662F;
 }
 
+.video {
+  text-align: center;
+  margin-top: 100px;
+  z-index: -10;
+}
+
+.line {
+  border-top: 10px solid #F4662F;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
 
 
 /*---------------------------------------------*/
@@ -91,3 +104,27 @@ body {
 #top a:hover {
     text-decoration: underline;
 }
+
+/*---------------------------------------------*/
+         /*@media screen*/
+/*---------------------------------------------*/
+
+@media screen and (max-width: 760px) {
+    
+    .video{
+      display: none;
+    }
+
+    .line{
+      display: none;
+    }
+
+    .row img{
+      width: 200px;
+      margin: 5px;
+      padding: 1px;
+      border-radius: 10%;
+      border:1px solid #F4662F;
+    }
+
+
