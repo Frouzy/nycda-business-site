@@ -3,7 +3,7 @@
 /*---------------------------------------------*/
 
 body {
-  background-color: #100d0d;
+  background-color: #152836;
   color: #eee;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 
@@ -20,6 +20,7 @@ body {
 }
 
 
+
 /*---------------------------------------------*/
          /*main content*/
 /*---------------------------------------------*/
@@ -28,6 +29,8 @@ body {
 
 .cont {
   text-align: center;
+  margin-top: 100px;
+  line-height: 2.5;
 
 }
 
@@ -54,10 +57,7 @@ body {
   display: inline-block;
 }
 
-.cont{
-  margin-top: 100px;
-  line-height: 2.5; 
-}
+
 
 .row img{
   margin: 20px;
@@ -91,10 +91,3 @@ body {
 #top a:hover {
     text-decoration: underline;
 }
-
-
-/*---------------------------------------------*/
-         /*Screen Max-width*/
-/*---------------------------------------------*/
-
-     
