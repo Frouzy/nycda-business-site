@@ -10,7 +10,7 @@ $(document).ready(function () {
         var name = $("#inputName").val();
         var people = $("#inputPeople").val();
         var date = $("#inputDate").val();
-        if (name == "..." || name == "Name") {
+        if (name == "..." || name == "") {
             alert("Please fill in you name");
         } else if (people == "") {
             alert("Please fill in the amount of people you want to make the reservation for");

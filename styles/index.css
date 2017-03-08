@@ -54,6 +54,17 @@ div.scroll {
     position: relative;
 }
 
+.container-fluid h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 450%;
+}
+
+.text-container p {
+    font-size: 200%
+}
+
 @media screen and (max-width: 760px) {
     #logo {
         width: 100%;
@@ -65,16 +76,8 @@ div.scroll {
         height: 350px;
     }
 
-}
-
-#content-box-one {
-
-}
-
-#content-box-two {
-
-}
-
-#content-box-three {
+    .container-fluid h1 {
+        font-size: 250%;
+    }
 
 }
