@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: rgb(200,200,200);
+    background-color: #152836;
 	height: 100%;
 }
 
@@ -93,6 +93,7 @@ h2 {
 }
 
 .column-left {
+	padding-left: 30px;
 	margin-top: 50px;
 	float: left;
 	width: 33%;
@@ -100,6 +101,7 @@ h2 {
 }
 
 .column-middle {
+	padding-left: 30px;
 	margin-top: 50px;
 	float: left;
 	width: 33%;
@@ -107,6 +109,8 @@ h2 {
 }
 
 .column-last {
+	padding-left: 30px;
+	padding-right: 15px;
 	margin-top: 50px;
 	float: left;
 	width: 33%;
@@ -123,7 +127,6 @@ h2.title-block {
 
 span.menu-item {
 	font-size: 24px;
-	margin-left: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-right: 10px;
@@ -136,7 +139,6 @@ span.price {
 
 span.side-item {
 	font-size: 18px;
-	margin-left: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-right: 10px;
@@ -148,12 +150,13 @@ span.side-price {
 }
 
 p.food-menu {
-	margin-left: 30px;
 	margin-bottom: 20px;
 	margin-right: 10px;
 }
 
 a.rollover {
+	margin-right: 10px;
+	margin-left: 10px;
 	display: block;
 	height: auto;
 }
@@ -176,11 +179,11 @@ img.burger {
 
 @media only screen and (max-width: 990px) {
 	
-	span.menu-item {
+	span.menu-item, span.side-item {
 		font-size: 16px;
 	}	
 	
-	span.price {
+	span.price, span.side-price {
 		font-size: 16px;
 	}
 	
@@ -216,3 +219,21 @@ img.burger {
 }
     
 
+@media only screen and (max-width: 480px) {
+	
+	.container {
+		min-width: 100%;
+	}
+	
+	.column-left, .column-middle, .column-last {
+		width: 100%;
+		padding-right: 10px;
+		border: 0px;
+	}
+	
+	.column-middle, .column-left {
+		border-bottom: 2px solid black;
+	}
+}
+	
+	
