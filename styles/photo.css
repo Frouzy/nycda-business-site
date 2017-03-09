@@ -26,10 +26,15 @@ body {
          /*main content*/
 /*---------------------------------------------*/
 
-h3{
-  font-size: 30px;
+
+span{
+  color: #e0d2cd;
+}
+
+h1{
+  font-size: 40px;
   color: #F4662F;
-  margin-top: -20px;
+  margin: 20px;
 }
 
 .cont {
@@ -71,13 +76,14 @@ h3{
 .video {
   text-align: center;
   margin-top: 100px;
-  z-index: -10;
 }
 
 .line {
   border-top: 10px solid #F4662F;
   width: 80%;
   margin: 0 auto 0 auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 
