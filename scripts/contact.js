@@ -125,7 +125,7 @@ function initMap() {
         position: restaurantone,
         map: map
     });
-
+    //Location 2
     var marker = new google.maps.Marker({
         position: restauranttwo,
         map: map
@@ -135,6 +135,7 @@ function initMap() {
     // var bikeLayer = new google.maps.BicyclingLayer();
     // bikeLayer.setMap(map);
 
+    // trafficLayer
     var trafficLayer = new google.maps.TrafficLayer();
     trafficLayer.setMap(map);
 

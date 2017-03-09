@@ -1,94 +1,89 @@
 /*---------------------------------------------*/
-         /*body*/
+/*body*/
 /*---------------------------------------------*/
 
 body {
-  background-color: #152836;
-  color: #eee;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  z-index: 10;
+    background-color: #152836;
+    color: #eee;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 10;
 
 }
 
-
 /*---------------------------------------------*/
-         /*Header*/
+/*Header*/
 /*---------------------------------------------*/
 
 .navbar {
     max-height: 500px;
-    background-color: #C70039; 
+    background-color: #C70039;
 }
 
-
-
 /*---------------------------------------------*/
-         /*main content*/
+/*main content*/
 /*---------------------------------------------*/
 
-
-span{
-  color: #e0d2cd;
+span {
+    color: #e0d2cd;
 }
 
-h1{
-  font-size: 40px;
-  color: #F4662F;
-  margin: 20px;
+h1 {
+    font-size: 40px;
+    color: #F4662F;
+    margin: 20px;
 }
 
 .cont {
-  text-align: center;
-  margin-top: 100px;
-  z-index: 25;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 25;
 }
 
 .page-head {
-  padding: 40px 0;
-  text-align: center;
-  margin-top: -100px; 
+    padding: 40px 0;
+    text-align: center;
+    margin-top: -100px;
 }
 
 .page-head .lead {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-bottom: 50px;
-  margin-top: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
 }
 
 .page-head h1 {
-  font-size: 52px;
-  margin: 50px 0 20px;
-  color: #F4662F;
-  position: relative;
-  display: inline-block;
+    font-size: 52px;
+    margin: 50px 0 20px;
+    color: #F4662F;
+    position: relative;
+    display: inline-block;
 }
 
-.row img{
-  margin: 20px;
-  padding: 5px;
-  border-radius: 50%;
-  border:10px solid #F4662F;
+.row img {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 10px solid #F4662F;
 }
 
 .video {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .line {
-  border-top: 10px solid #F4662F;
-  width: 80%;
-  margin: 0 auto 0 auto;
-  margin-bottom: 40px;
-  margin-top: 30px;
+    border-top: 10px solid #F4662F;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
-
 /*---------------------------------------------*/
-         /*footer*/
+/*footer*/
 /*---------------------------------------------*/
 #footer {
     width: 100%;
@@ -97,6 +92,7 @@ h1{
     text-align: center;
     margin-top: 70px;
 }
+
 #top {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -112,25 +108,25 @@ h1{
 }
 
 /*---------------------------------------------*/
-         /*@media screen*/
+/*@media screen*/
 /*---------------------------------------------*/
 
 @media screen and (max-width: 760px) {
-    
-    .video{
-      display: none;
+
+    .video {
+        display: none;
     }
 
-    .line{
-      display: none;
+    .line {
+        display: none;
     }
 
-    .row img{
-      width: 200px;
-      margin: 5px;
-      padding: 1px;
-      border-radius: 10%;
-      border:1px solid #F4662F;
+    .row img {
+        width: 200px;
+        margin: 5px;
+        padding: 1px;
+        border-radius: 10%;
+        border: 1px solid #F4662F;
     }
 
 
